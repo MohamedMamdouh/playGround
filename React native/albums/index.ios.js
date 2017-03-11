@@ -1,8 +1,15 @@
-//import Library to help creating component 
+// Import a library to help create a component 
 
 import React from 'react';
-import ReactNative from 'react-native';
+import { Text, AppRegistry} from 'react-native';
 
-//Create component 
 
-//Render it to device 
+// Create a component 
+const App = () =>{
+  return (
+    <Text>Some Text</Text>
+  );
+};
+
+//Render it to device screen 
+AppRegistry.registerComponent('albums', ()=> App);
